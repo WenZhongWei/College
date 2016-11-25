@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">大学信息在线</string>
+    <string name="cut_login_mode">切换账号</string>
+    <string name="sign_in">登录</string>
+    <string name="pwd">密码</string>
+    <string name="phone_email">手机号/邮箱</string>
+    <string name="ok">确定</string>
+    <string name="register">注册</string>
+    <string name="email">邮箱</string>
+    <string name="reqwd">重复密码</string>
+    <string name="phone">手机号</string>
+    <string name="validate_code">验证码</string>
+    <string name="get_code">获取验证码</string>
+    <string name="exit">再点一次退出</string>
+    <string name="account_fomat_error">账号格式错误</string>
+    <string name="pwd_format_error">密码格式错误</string>
+    <string name="data_format_error">数据格式错误</string>
+    <string name="data_load_fail">数据请求失败</string>
+    <string name="network_fail">网络请求失败</string>
+    <string name="no_data_return">无数据</string>
+    <string name="register_fast">快速注册</string>
+    <string name="reset_pwd">重置密码</string>
+    <string name="code_send_suc">验证码已发送</string>
+    <string name="code_sent_fail">验证码发送失败</string>
+    <string name="validate_code_fail">验证失败</string>
+    <string name="phone_format_error">手机号格式错误</string>
+    <string name="error">发生错误</string>
+    <string name="email_format_error">邮箱格式错误</string>
+    <string name="repwd_deffience">两次密码不一致</string>
+    <string name="click_exit">点击退出</string>
+    <string name="center_account">账号：%s</string>
+    <string name="center_nick">昵称：%s</string>
+    <string name="center_school">学校：%s</string>
+    <string name="nick_layout">昵称：</string>
+    <string name="account_layout">账号：</string>
+    <string name="school_layout">学校：</string>
+    <string name="weishezhi">未设置</string>
+    <string name="userinfo">个人信息</string>
+    <string name="gender">性别</string>
+    <string name="nick">昵称</string>
+    <string name="name">姓名</string>
+    <string name="photo">头像</string>
+    <string name="save">保存</string>
+    <string name="schoolinfo">校内信息</string>
+    <string name="role">角色</string>
+    <string name="school">学校</string>
+    <string name="area">区域</string>
+    <string name="department">院系</string>
+    <string name="school_class">班级</string>
+    <string name="comeschool_year">入学年份</string>
+    <string name="input_suggest">请输入建议</string>
+    <string name="need_15">内容需在15字以上</string>
+    <string name="please_login">请先登录</string>
+    <string name="gril">女</string>
+    <string name="boy">男</string>
+    <string name="not_need_save">不需要保存</string>
+    <string name="phone_number">手机号</string>
+    <string name="account_and_safe">账号与安全</string>
+    <string name="safe_email">邮箱</string>
+    <string name="change_pwd">修改密码</string>
+    <string name="not_need_update">不需要更新</string>
+    <string name="validate_phone_fail">手机验证失败</string>
+    <string name="validate_email_fail">验证邮箱失败</string>
+    <string name="oldpwd">原密码</string>
+    <string name="setting">系统设置</string>
+    <string name="night">夜间模式</string>
+    <string name="check_version">检查更新</string>
+    <string name="download_fail">下载失败</string>
+    <string name="data_null_exit">没有数据，程序退出</string>
+
+    <string-array name="center_items_text">
+        <item>校内信息</item>
+        <item>账号与安全</item>
+        <item>系统设置</item>
+        <item>意见反馈</item>
+    </string-array>
+</resources>

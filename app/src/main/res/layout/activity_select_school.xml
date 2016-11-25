@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/divider_title"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/select_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/select_search"
+            android:layout_toRightOf="@+id/select_back"
+            android:background="@drawable/shape_stroke_bg_red"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textSize="@dimen/font_size_20" />
+
+        <ImageView
+            android:id="@+id/select_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/select_input"
+            android:layout_alignTop="@id/select_input"
+            android:layout_centerVertical="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/selector_back"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/select_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/select_input"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/select_input"
+            android:layout_centerVertical="true"
+            android:paddingBottom="5dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/icon_search"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/select_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/font_size_20"
+        android:layout_marginRight="@dimen/font_size_20"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@color/gray"
+        android:scrollbars="none" />
+</LinearLayout>

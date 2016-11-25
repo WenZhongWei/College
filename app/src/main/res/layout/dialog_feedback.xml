@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_stroke_bg"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/feedback_suggest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:hint="@string/input_suggest"
+            android:lines="7" />
+
+        <TextView
+            android:id="@+id/feedback_nums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:text="140"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/feedback_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/font_size_10"
+        android:background="@drawable/selector_bt_bg_red"
+        android:text="确定"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_size_18" />
+</LinearLayout>

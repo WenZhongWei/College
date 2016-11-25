@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\androidstudio\\College\\pulltorefresh_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_top.xml",
+        "source": "E:\\androidstudio\\College\\pulltorefresh_library\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_top.xml"
+    },
+    {
+        "merged": "E:\\androidstudio\\College\\pulltorefresh_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_bottom.xml",
+        "source": "E:\\androidstudio\\College\\pulltorefresh_library\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_bottom.xml"
+    }
+]

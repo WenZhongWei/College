@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="bg" format="color|reference" />
+    <attr name="text_color" format="color" />
+
+    <!--针对TITLE的样式-->
+    <declare-styleable name="TitleView">
+        <attr name="tv_title" format="string" />
+        <attr name="tv_right" format="string" />
+
+        <attr name="tv_back_visibility" format="enum">
+            <enum name="visable" value="0" />
+            <enum name="invisable" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+        <attr name="tv_img_right_visibility" format="enum">
+            <enum name="visable" value="0" />
+            <enum name="invisable" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+        <attr name="tv_tv_right_visibility" format="enum">
+            <enum name="visable" value="0" />
+            <enum name="invisable" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <!--针对Edittext的样式-->
+    <declare-styleable name="MEditText">
+        <attr name="me_lable_src" format="reference|color" />
+        <attr name="me_hint" format="string" />
+        <attr name="me_text" format="string" />
+        <attr name="me_del_enable" format="boolean" />
+        <attr name="me_eye_enable" format="boolean" />
+        <attr name="me_inputType" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="password" value="1" />
+            <enum name="number" value="2" />
+        </attr>
+        <attr name="me_maxLength" format="integer" />
+    </declare-styleable>
+
+    <!--圆形图片-->
+    <declare-styleable name="CricleImageView">
+        <attr name="cimg_inStrokeWidth" format="dimension" />
+        <attr name="cimg_outStrokeWidth" format="dimension" />
+    </declare-styleable>
+
+    <!--个人信息-->
+    <declare-styleable name="UserInfoView">
+        <attr name="uv_label_text" format="string" />
+        <attr name="uv_input_enable" format="boolean" />
+        <attr name="uv_input_text" format="string" />
+        <attr name="uv_input_visibility" format="enum">
+            <enum name="visable" value="0" />
+            <enum name="gone" value="1" />
+        </attr>
+        <attr name="uv_img_visibility" format="enum">
+            <enum name="visable" value="0" />
+            <enum name="gone" value="1" />
+        </attr>
+        <attr name="uv_arr_visibility" format="enum">
+            <enum name="visable" value="0" />
+            <enum name="gone" value="1" />
+        </attr>
+        <attr name="uv_input_hint" format="string" />
+    </declare-styleable>
+</resources>

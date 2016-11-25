@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="bg">@color/bg_gray</item>
+        <item name="text_color">@color/text_color</item>
+    </style>
+
+    <style name="feedback_Dialog" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+    </style>
+
+    <style name="Night" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="bg">@color/bg_black</item>
+        <item name="text_color">@color/text_color_night</item>
+    </style>
+
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bg"
+    android:orientation="vertical">
+
+    <com.wen.college.views.TitleView
+        android:id="@+id/tabs_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tv_right="@string/ok"
+        app:tv_title="@string/app_name"
+        app:tv_tv_right_visibility="visable" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/center_divider"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?attr/bg"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="我的频道"
+            android:textColor="?attr/text_color"
+            android:textSize="@dimen/font_size_18" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/tabs_my"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:cacheColorHint="@android:color/transparent"
+        android:horizontalSpacing="5dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/center_divider"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?attr/bg"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="其他频道"
+            android:textColor="?attr/text_color"
+            android:textSize="@dimen/font_size_18" />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/tabs_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:cacheColorHint="@android:color/transparent"
+        android:horizontalSpacing="5dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp" />
+</LinearLayout>

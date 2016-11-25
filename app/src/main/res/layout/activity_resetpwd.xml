@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bg"
+    android:orientation="vertical">
+
+    <com.wen.college.views.TitleView
+        android:id="@+id/resetpwd_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tv_img_right_visibility="gone"
+        app:tv_title="@string/reset_pwd"
+        app:tv_tv_right_visibility="gone" />
+
+    <TextView
+        android:id="@+id/resetpwd_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:text="邮箱:"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/font_size_18" />
+
+    <Button
+        android:id="@+id/resetpwd_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:background="@drawable/selector_bt_bg_red"
+        android:text="发送邮件"
+        android:textColor="@color/selector_bt_bg"
+        android:textSize="@dimen/font_size_18" />
+</LinearLayout>

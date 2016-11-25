@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bg"
+    android:orientation="vertical">
+
+    <com.wen.college.views.TitleView
+        android:id="@+id/safe_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tv_title="@string/account_and_safe" />
+
+    <com.wen.college.views.UserInfoView
+        android:id="@+id/safe_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:uv_input_enable="false"
+        app:uv_label_text="@string/phone_number" />
+
+    <com.wen.college.views.UserInfoView
+        android:id="@+id/safe_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:uv_input_enable="false"
+        app:uv_label_text="@string/safe_email" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/divider_land" />
+
+    <com.wen.college.views.UserInfoView
+        android:id="@+id/safe_repwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:uv_input_enable="false"
+        app:uv_input_hint=""
+        app:uv_label_text="@string/change_pwd" />
+</LinearLayout>

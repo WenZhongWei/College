@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bg"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.wen.college.activities.LoginActivity">
+
+    <com.wen.college.views.TitleView
+        android:id="@+id/login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tv_right="@string/cut_login_mode"
+        app:tv_title="@string/app_name"
+        app:tv_tv_right_visibility="visable" />
+
+    <com.wen.college.views.MEditText
+        android:id="@+id/login_account"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        app:me_del_enable="true"
+        app:me_maxLength="11"
+        app:me_hint="@string/phone_email"
+        app:me_lable_src="@drawable/selector_account" />
+
+    <com.wen.college.views.MEditText
+        android:id="@+id/login_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        app:me_del_enable="true"
+        app:me_eye_enable="true"
+        app:me_hint="@string/pwd"
+        app:me_inputType="password"
+        app:me_lable_src="@drawable/selector_pwd" />
+
+    <Button
+        android:id="@+id/login_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/selector_bt_bg_red"
+        android:text="@string/sign_in"
+        android:textColor="@android:color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/login_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="10dp"
+            android:text="@string/register_fast"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/login_reset_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="10dp"
+            android:text="@string/reset_pwd"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/font_size_16" />
+    </RelativeLayout>
+
+</LinearLayout>

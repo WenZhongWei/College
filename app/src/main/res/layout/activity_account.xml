@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bg"
+    android:orientation="vertical">
+
+    <com.wen.college.views.TitleView
+        android:id="@+id/account_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tv_right="@string/ok"
+        app:tv_title="@string/app_name"
+        app:tv_tv_right_visibility="visable" />
+
+    <com.wen.college.views.MEditText
+        android:id="@+id/account_phone_input"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:visibility="gone"
+        app:me_del_enable="true"
+        app:me_hint="@string/phone"
+        app:me_lable_src="@drawable/selector_phone"
+        app:me_maxLength="11" />
+
+    <com.wen.college.views.MEditText
+        android:id="@+id/account_email_input"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        app:me_del_enable="true"
+        app:me_hint="@string/email"
+        app:me_lable_src="@drawable/selector_email" />
+
+</LinearLayout>

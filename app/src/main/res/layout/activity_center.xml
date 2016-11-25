@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bg"
+    android:orientation="vertical">
+
+    <com.wen.college.views.TitleView
+        android:id="@+id/center_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tv_title="@string/app_name" />
+
+    <RelativeLayout
+        android:id="@+id/center_private"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/center_top_bg">
+
+        <com.wen.college.views.CricleImageView
+            android:id="@+id/center_photo"
+            android:layout_width="@dimen/center_photo_size"
+            android:layout_height="@dimen/center_photo_size"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/margin_20"
+            android:src="@drawable/photo_unlogin"
+            app:cimg_inStrokeWidth="4dp"
+            app:cimg_outStrokeWidth="4dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/center_photo"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/center_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nick_layout"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_size_18" />
+
+            <TextView
+                android:id="@+id/center_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_layout"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_size_18" />
+
+            <TextView
+                android:id="@+id/center_school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/school_layout"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_size_18" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/center_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/center_divider"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+    <Button
+        android:id="@+id/center_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/selector_bt_bg_red"
+        android:text="@string/click_exit"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_size_18" />
+
+</LinearLayout>

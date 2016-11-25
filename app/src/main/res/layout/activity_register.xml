@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_reg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bg"
+    android:orientation="vertical"
+    tools:context=".activities.RegisterActivity"
+    android:weightSum="1">
+
+    <com.wen.college.views.TitleView
+        android:id="@+id/reg_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tv_right="@string/ok"
+        app:tv_title="@string/register"
+        app:tv_tv_right_visibility="visable" />
+
+    <com.wen.college.views.MEditText
+        android:id="@+id/reg_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        app:me_del_enable="true"
+        app:me_hint="@string/email"
+        app:me_lable_src="@drawable/selector_email" />
+
+    <com.wen.college.views.MEditText
+        android:id="@+id/reg_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        app:me_del_enable="true"
+        app:me_eye_enable="true"
+        app:me_hint="@string/pwd"
+        app:me_inputType="password"
+        app:me_lable_src="@drawable/selector_pwd" />
+
+    <com.wen.college.views.MEditText
+        android:id="@+id/reg_repwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        app:me_del_enable="true"
+        app:me_eye_enable="true"
+        app:me_hint="@string/reqwd"
+        app:me_inputType="password"
+        app:me_lable_src="@drawable/selector_pwd" />
+
+
+</LinearLayout>

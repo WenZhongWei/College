@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bg"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.wen.college.activities.LoginActivity">
+
+    <com.wen.college.views.TitleView
+        android:id="@+id/validate_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tv_right="@string/ok"
+        app:tv_title="@string/app_name"
+        app:tv_tv_right_visibility="gone" />
+
+    <com.wen.college.views.MEditText
+        android:id="@+id/validate_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        app:me_del_enable="true"
+        app:me_hint="@string/phone"
+        app:me_inputType="number"
+        app:me_lable_src="@drawable/selector_phone"
+        app:me_maxLength="11" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/validate_get_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/validate_code"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/validate_code"
+            android:layout_marginRight="@dimen/margin_20"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_bt_bg_red"
+            android:enabled="false"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/get_code"
+            android:textColor="@color/selector_bt_bg"
+            android:textSize="@dimen/font_size_18" />
+
+        <com.wen.college.views.MEditText
+            android:id="@id/validate_code"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/validate_get_code"
+            app:me_del_enable="true"
+            app:me_eye_enable="false"
+            app:me_hint="@string/validate_code"
+            app:me_inputType="number"
+            app:me_lable_src="@drawable/selector_code"
+            app:me_maxLength="4" />
+
+    </RelativeLayout>
+
+</LinearLayout>

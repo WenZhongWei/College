@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bg"
+    android:orientation="vertical">
+
+    <com.wen.college.views.TitleView
+        android:id="@+id/userinfo_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tv_title="@string/userinfo" />
+
+    <com.wen.college.views.UserInfoView
+        android:id="@+id/userinfo_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        app:uv_input_enable="false"
+        app:uv_img_visibility="visable"
+        app:uv_input_visibility="gone"
+        app:uv_label_text="@string/photo" />
+
+    <com.wen.college.views.UserInfoView
+        android:id="@+id/userinfo_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        app:uv_input_enable="true"
+        app:uv_label_text="@string/name" />
+
+    <com.wen.college.views.UserInfoView
+        android:id="@+id/userinfo_nick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        app:uv_input_enable="true"
+        app:uv_label_text="@string/nick" />
+
+    <com.wen.college.views.UserInfoView
+        android:id="@+id/userinfo_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        app:uv_input_enable="false"
+        app:uv_label_text="@string/gender" />
+
+    <Button
+        android:id="@+id/userinfo_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_20"
+        android:background="@drawable/selector_bt_bg_red"
+        android:text="@string/save"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_size_18" />
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/divider_land"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/userinfo_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingBottom="9dp"
+        android:paddingTop="9dp"
+        android:text="LABEL"
+        android:textColor="?attr/text_color"
+        android:textSize="@dimen/font_size_18" />
+
+    <EditText
+        android:id="@+id/userinfo_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/userinfo_label"
+        android:layout_alignTop="@id/userinfo_label"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@+id/userinfo_next"
+        android:layout_toRightOf="@+id/userinfo_label"
+        android:background="@android:color/transparent"
+        android:enabled="false"
+        android:gravity="right"
+        android:hint="@string/weishezhi"
+        android:paddingBottom="9dp"
+        android:paddingTop="9dp"
+        android:layout_marginRight="5dp"
+        android:textColor="?attr/text_color"
+        android:textSize="@dimen/font_size_18" />
+
+    <com.wen.college.views.CricleImageView
+        android:id="@+id/userinfo_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/userinfo_label"
+        android:layout_alignTop="@id/userinfo_label"
+        android:layout_toLeftOf="@+id/userinfo_next"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/photo_unlogin"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/userinfo_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/userinfo_label"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/userinfo_label"
+        android:paddingBottom="9dp"
+        android:paddingTop="9dp"
+        android:src="@drawable/next" />
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bg"
+    android:orientation="vertical">
+
+    <com.wen.college.views.TitleView
+        android:id="@+id/pwd_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tv_right="@string/ok"
+        app:tv_title="@string/change_pwd"
+        app:tv_tv_right_visibility="visable" />
+
+    <com.wen.college.views.MEditText
+        android:id="@+id/pwd_old_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        app:me_del_enable="true"
+        app:me_eye_enable="true"
+        app:me_hint="@string/oldpwd"
+        app:me_inputType="password"
+        app:me_lable_src="@drawable/selector_pwd" />
+
+    <com.wen.college.views.MEditText
+        android:id="@+id/pwd_new_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        app:me_del_enable="true"
+        app:me_eye_enable="true"
+        app:me_hint="@string/pwd"
+        app:me_inputType="password"
+        app:me_lable_src="@drawable/selector_pwd" />
+
+    <com.wen.college.views.MEditText
+        android:id="@+id/pwd_repwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        app:me_del_enable="true"
+        app:me_eye_enable="true"
+        app:me_hint="@string/reqwd"
+        app:me_inputType="password"
+        app:me_lable_src="@drawable/selector_pwd" />
+
+</LinearLayout>

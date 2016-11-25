@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="?attr/bg"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.wen.college.views.TitleView
+        android:id="@+id/school_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tv_title="@string/schoolinfo" />
+
+    <com.wen.college.views.UserInfoView
+        android:id="@+id/school_role"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        app:uv_input_enable="false"
+        app:uv_label_text="@string/role" />
+
+    <com.wen.college.views.UserInfoView
+        android:id="@+id/school_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        app:uv_input_enable="false"
+        app:uv_label_text="@string/school" />
+
+    <com.wen.college.views.UserInfoView
+        android:id="@+id/school_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        app:uv_arr_visibility="gone"
+        app:uv_input_enable="false"
+        app:uv_label_text="@string/area" />
+
+    <com.wen.college.views.UserInfoView
+        android:id="@+id/school_department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        app:uv_input_enable="true"
+        app:uv_label_text="@string/department" />
+
+    <com.wen.college.views.UserInfoView
+        android:id="@+id/school_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        app:uv_input_enable="true"
+        app:uv_label_text="@string/school_class" />
+
+    <com.wen.college.views.UserInfoView
+        android:id="@+id/school_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        app:uv_input_enable="false"
+        app:uv_label_text="@string/comeschool_year" />
+
+    <Button
+        android:id="@+id/school_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_20"
+        android:background="@drawable/selector_bt_bg_red"
+        android:text="@string/save"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_size_18" />
+
+</LinearLayout>
